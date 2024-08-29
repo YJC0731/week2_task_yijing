@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 導入字體+行高 */
+@import url('https://fonts.google.com/specimen/Bruno+Ace+SC?query=Bruno+Ace');
+
+body {
+        font-family: "Bruno Ace SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.5;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+     /*outline: solid 1px; 確認物件位置用*/
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.h1 {
+    font-size: 128px;
+  }
+  
+  .h2 {
+    font-size: 64px;
+  }
+  
+  .fs-1 {
+    font-size: 32px;
+  }
+  
+  .fs-2 {
+    font-size: 24px;
+  }
+  
+  .fs-3 {
+    font-size: 20px;
+  }
+  
+  .container {
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+
+
+/* exper-container 模組化設定 */
+
+.d-flex{
+display: flex;
+}
+
+.align-items-center { 
+    align-items:center;
+}
+
+.justify-content-end{
+    justify-content: flex-end;
+}
+
+.justify-content-between{
+justify-content: space-between;
+}
+
+.mr-6{
+    margin-right: 24px;
+}
+
+.mb-6{
+    margin-bottom: 24px;
+}
+
+.align-items-start{
+    align-items:flex-start;
+}
+
+
+/* 網頁外容器 */
+
+/* header */
+.header{
+    background: #000;
+    color: #D1D1D1;
+    padding: 40px 0;
+}
+
+.header .nav{
+ justify-content: space-between;
+ align-content: center;
+}
+
+
+/* banner*/
+
+.banner {
+    background: #000;
+    color: white;
+  }
+  
+  .banner-title-strong{
+    display: block;
+    text-align: right;
+    color: #00ffa3;
+  }
+  
+  .btn-light {
+    padding: 12px 24px;
+    border-radius: 32px;
+    background: white;
+    color: #000;
+  }
+
+  /* Intro*/
+  .intro{
+    background-image: url("img/background-img.png");   /* 引入背景圖*/
+    background-repeat: no-repeat; /* 設定圖片是否有重複*/
+    background-size: cover; /* 設定背景圖片尺寸：填滿整個區塊*/
+    color: white; 
+    padding: 160px 0;
+  }
+
+  .intro-desc {
+    width: 526px;
+    margin-right: 24px;
+  }
+
+  .intro-desc .h2{
+    margin-bottom: 36px;
+  }
+
+  .intro-desc .fs-2{
+    margin-bottom: 32px;
+}
+
+.intro-card-pic{
+    justify-content: flex-end;
+}
+
+/* AboutMe*/
+.about{
+    padding: 160px 0;
+    color: #15161D;
+}
+
+.about .container{
+    align-items:center;
+}
+
+.about-ability{
+    width: 636px;
+    flex-wrap: wrap; /*將flex-wrap設定在外容器*/
+    gap: 24px;
+}
+
+.about-ability li{
+    width: calc(50% - 12px);
+    padding: 16px;
+    margin-bottom: 24px;
+    border: 1px solid #E3E3E3;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.about-desc{
+    width: 526px;
+}
+
+.about-desc .h2{
+    margin-bottom: 36px;
+}
+
+/* ContactMe*/
+.contact {
+    background: linear-gradient(rgba(5, 0, 20, 1), rgba(1, 2, 30, 0.89)); /* 漸層背景色設定*/
+    padding: 96px 0;
+  }
+
+.contacr-desc .h2{
+    color:#FFFFFF;
+    margin-right:16px;
+}
+
+.contact-links{
+    width: 526px;
+}
+
+.contact-links a{
+    border-radius: 40px;
+    transition: 1s;
+  }
+  
+  .contact-links a:hover {
+    box-shadow: 0 0 16px 3px rgba(144, 148, 255, 0.9);
+  }
+  
+
+
+/* MyProjects*/
+  .projects {
+    padding: 160px 0;
+    color: #000;
+  }
+  
+  .projects .h2 {
+    width: 746px;
+    margin-left: auto;
+    margin-bottom: 16px;
+  }
+  
+ .projects-main {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+ .projects-main-pic {
+    align-items:flex-start;
+  }
+  
+  .projects-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+  
+   .projects-card-pic {
+    align-items:flex-start;
+    width: 196px;
+    margin-right: 24px;
+  }
+  
+  .projects-card-content {
+    width: 636px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .btn-dark{
+    display: block;
+    background: #000;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    width: max-content;
+    border-radius: 32px;
+    gap: 4px;
+  } 
+  
+  .projects-img {
+    justify-content: space-between;
+  }
+  
+  .projects .prjoects-img-1 {
+    width: 306px;
+}
+  
+  .projects .prjoects-img-2 {
+    width: 526px;
+  }
+
+/* footer*/
+.footer{
+    background-color: black;
+    padding: 40px 0; 
+}
+.copyright{
+    text-align: center;
+    color: white;
+}
