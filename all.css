@@ -93,7 +93,7 @@ img{
   }
   
   .container {
-    max-width: 1296px;
+    max-width: 1320px;
     margin: 0 auto;
     /*可再增加左右 padding 12px，也就是說寬度會到 1320px，
     這個作法可以再後續 RWD 的課程內容使用到(因為視覺來說左右不會直接貼齊邊界)*/
