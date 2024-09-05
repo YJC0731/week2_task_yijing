@@ -95,6 +95,10 @@ img{
   .container {
     max-width: 1296px;
     margin: 0 auto;
+    /*可再增加左右 padding 12px，也就是說寬度會到 1320px，
+    這個作法可以再後續 RWD 的課程內容使用到(因為視覺來說左右不會直接貼齊邊界)*/
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
 
@@ -162,6 +166,10 @@ justify-content: space-between;
     border-radius: 32px;
     background: white;
     color: #000;
+  }
+
+  a:hover{
+    background:#00ffa3;
   }
 
   /* Intro*/
